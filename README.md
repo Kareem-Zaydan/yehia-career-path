@@ -1,6 +1,6 @@
 # Yehia's Career Path
 
-**Student:** [Your Full Name]
+**Student:** [Kareem Shadi Zaydan]
 
 ## Project Description
 
