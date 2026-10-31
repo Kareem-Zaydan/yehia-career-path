@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Yehia's Career Path
 
-## Getting Started
+**Student:** [Your Full Name]
 
-First, run the development server:
+## Project Description
+
+Yehia's Career Path is a Next.js 16 website created for Assignment 1 of the TechTalks Ultimate Next.js 16 Course.
+
+The website helps Yehia organize his career goals, follow a three-stage plan, explore job opportunities, and track his applications.
+
+## Technologies
+
+- Next.js 16
+- React
+- TypeScript
+- Tailwind CSS
+- Git and GitHub
+
+## Run Locally
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Routing Questions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. Why did you use `await` when reading `params`?
 
-## Learn More
+In Next.js 16, the route parameters are provided as a Promise. I used `await params` to get the actual ID value before searching for the matching opportunity.
 
-To learn more about Next.js, take a look at the following resources:
+### 2. Why is the route ID a string?
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Values read from URL segments are strings. Keeping the opportunity IDs as strings allows me to compare the route ID with the IDs in my sample data directly.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 3. What belongs in the dashboard layout, and what belongs in each dashboard page?
 
-## Deploy on Vercel
+The dashboard layout contains the navigation shared by the dashboard pages. The overview page displays the total number of applications and a progress message. The applications page displays the list of applications and their statuses.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## GitHub Branch
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+`assignment-1-routing`
